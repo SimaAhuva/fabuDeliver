@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Route Optimization Tool</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="routes.html">Routes</a></li>
+							<li><a href="north.html">North</a></li>
+							<li><a href="south.html">South</a></li>
+							<li><a href="west.html">West</a></li>
+							<li><a href="east.html">West</a></li>
+							<li><a href="comment.html">Comments and Concerns</a></li>
+						</ul>
+						<ul class="icons alt">
+									<li><a href="https://twitter.com/fabuwood?lang=en" class="icon brands alt fa-twitter" target=”_blank”><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.facebook.com/Fabuwood/" class="icon brands alt fa-facebook-f" target=”_blank”><span class="label">Facebook</span></a></li>
+									<li><a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.fabuwood.com%2Fkbis%2F2023%2F&e=AT2TdaQMisuIXs9lz8QttBCX95MjjdrHRn65j4tcTrLlZxQdb0N3AF7i0k4c0CR970QB9vvorUiksb-RhAsxPUmmICbBehnD" class="icon brands alt fa-instagram" target=”_blank”><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/company/fabuwood-cabinetry-corp-" class="icon brands alt fa-github" target=”_blank”><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+
+
+									<h2><a href="routes.html">OPTIMIZE ROUTES HERE</a></h2>
+									<p>Fabuwood delivers within 100 miles of it's headquarters in Newark NJ <br>
+										Take a look at the map below in order to determine where to make the delivery route.
+                                    </p>
+
+								</header>
+
+								<ul class="actions special">
+									<li><a href="north.html" class="button large">North</a></li>
+									<li><a href="south.html" class="button large">South</a></li>
+									<li><a href="east.html" class="button large">East</a></li>
+									<li><a href="west.html" class="button large">West</a></li>
+								</ul>
+								
+							<div id="googleMap" style="width:100%;height:400px;"></div>
+
+						<script>
+						function myMap() {
+						var mapProp= {
+						  center:new google.maps.LatLng(40.74, -74.130051),
+						  zoom:15,
+						};
+						var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+							var marker = new google.maps.Marker({position: (40.74,-74.130051)});
+							marker.setMap(map);
+							google.maps.event.addListener(marker,'click',function() {
+  map.setZoom(9);
+  map.setCenter(marker.getPosition());
+});
+						}
+						</script>
+
+						<script src="https://maps.googleapis.com/maps/api/js?AIzaSyAJ-2qAjlnjOD9dZrcuy8d0LepgjzLKNa0&callback=myMap"></script>
+
+
+							</article>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<section class="split contact">
+							<h2>Enter Delivery Adresses</h2>
+						<section>
+
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="address1">Address 1:  Street Address, Zip</label>
+										<input type="text" name="address1" id="address1" />
+									</div>
+									<div class="field">
+										<label for="address2">Address 2:  Street Address, Zip</label>
+										<input type="text" name="address2" id="address2" />
+									</div>
+
+									<div class="field">
+										<label for="address3">Address 3:  Street Address, Zip</label>
+										<input type="text" name="address3" id="address3" />
+									</div>
+
+									<div class="field">
+										<label for="address4">Address 4: Street Address, Zip</label>
+										<input type="text" name="address4" id="address4" />
+									</div>
+
+									<div class="field">
+										<label for="address5">Address 5:  Street Address, Zip</label>
+										<input type="text" name="address5" id="address5" />
+									</div>
+
+									<div class="field">
+										<label for="address6">Address 6:  Street Address, Zip</label>
+										<input type="text" name="address6" id="address6" />
+									</div>
+
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Calculate Route" /></li>
+								</ul>
+							</form>
+
+						</section>
+							<section>
+								<iframe width="850" height="500" src="https://codehs.com/sandbox/rachaelsakraf/new-sandbox-program-5/embed/?display_mode=default&read_only=True" frameborder="0" allowfullscreen class="video-iframe"></iframe>
+
+							</section>
+
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			</div>
+	</body>
+</html>

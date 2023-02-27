@@ -1,0 +1,16 @@
+#map {
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+
+.truck {
+width: 20px;
+height: 20px;
+border: 2px solid #fff;
+border-radius: 50%;
+background: #3887be;
+pointer-events: none;
+}

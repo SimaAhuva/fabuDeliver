@@ -1,0 +1,19 @@
+
+h1{
+    color: black;
+font-size: 50pt;
+padding: 100px;
+margin-top: 50px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+/*
+ * Optional: Makes the sample page fill the window.
+ */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
